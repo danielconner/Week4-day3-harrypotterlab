@@ -1,0 +1,12 @@
+<p>A list of all Hogwarts students</p>
+
+<% @students.each do |student| %>
+
+  <p>Name: <%= student.full_name()%></p>
+  <p>House: <%= student.house()%></p>
+  <p>age: <%= student.age()%></p>
+
+
+
+
+<% end %>
