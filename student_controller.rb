@@ -1,6 +1,8 @@
 require( 'sinatra')
 require( 'sinatra/contrib/all')
 require_relative( './models/student.rb')
+require_relative( './models/house.rb')
+
 
 # index
 get '/students' do
@@ -15,6 +17,7 @@ post "/students" do
 end
 
 get "/students/new" do
+  @houses = ["gryffindor", "Slytherin", "hufflepuff", "Ravenclaw"]
   erb(:new)
 end
 
