@@ -9,7 +9,7 @@
   <label for="house_select">Select your house</label>
   <select name="house" id="house_select">
     <% for house in @houses %>
-    <option value="<%=house%>"><%=house%></option>
+    <option value="<%= house.name %>"><%=house.name%></option>
     <%end%>
   </select>
 

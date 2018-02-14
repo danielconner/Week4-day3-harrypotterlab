@@ -17,7 +17,7 @@ post "/students" do
 end
 
 get "/students/new" do
-  @houses = ["gryffindor", "Slytherin", "hufflepuff", "Ravenclaw"]
+  @houses = House.all()
   erb(:new)
 end
 

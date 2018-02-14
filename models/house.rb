@@ -35,5 +35,11 @@ class House
     result = House.new(house.first)
     return result
   end
+  #
+  # def self.name
+  #   sql = "SELECT name from houses"
+  #  SqlRunner.run(sql)
+  #
+  # end
 
 end
